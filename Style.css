@@ -181,15 +181,31 @@ div.titleblock {
 /* Project pages */
 
 .project-pages {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
+
 .project-pages-main {
+    position: relative;
     background-color: #F4F4F0;
     margin-bottom: 15px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project-pages img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border-width: 5;
+    margin-bottom: 15px;
 }
 
 .project-pages h1 {
@@ -199,7 +215,23 @@ div.titleblock {
     margin-top: 55px;
 }
 
-.project-pages a {
+.project-pages-main ul {
+    display: table;
+    text-align: left;
+    font-weight: 530;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.project-pages-main a {
+    color: #535a56;
+}
+
+.project-pages-main p {
+    margin: 0;
+}
+
+.back-button a {
     position: absolute;
     font-weight: 550;
     margin: auto;
@@ -227,7 +259,7 @@ div.titleblock {
     font-size: 50px;
 }
 
-.connect-container {
+.icon-container {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10px;
@@ -236,12 +268,13 @@ div.titleblock {
 }
 .icon {
     margin: auto;
+    display: flex;
 }
 .icon img{
     position: center;
     object-fit: fill;
     height: 60px;
-    width: 60px;
+    width: auto;
 }
 
 
