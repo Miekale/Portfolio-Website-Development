@@ -56,7 +56,6 @@ h1 {
 
 .titleblock {
     background-color: #868F6E;
-    top: 30vh;
     opacity: 90%;
     border-radius: 10px;
     position: absolute;
@@ -69,12 +68,13 @@ h1 {
     text-align: center;
     clear: none;
     z-index: 4;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .titleblock h1 {
-    font-size: 75px;
+    font-size: 85px;
     position: relative;
     margin: 0;
 }
@@ -82,10 +82,17 @@ h1 {
 .titleblock h2 {
     font-weight: 500;
     padding-top: 0%;
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
     position: relative;
+}
 
+.titleblock h3 {
+    font-weight: 500;
+    padding-top: 0%;
+    font-size: 25px;
+    margin: 0;
+    position: relative;
 }
 
 /* Projects styling */
@@ -189,6 +196,29 @@ h1 {
         column-gap: 20px;
         row-gap: 20px;
     }
+}
+
+.toprojects {
+    z-index: 4;
+    position: relative;
+    margin-bottom: 40px;
+    bottom: 60px;
+}
+
+.toprojects a{
+    position: absolute;
+    font-weight: 550;
+    font-size: 25px;
+    color: #F4F4F0;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    background-color: #535A56;
+    border-radius: 20px;
+    padding: 10px;
+    padding-inline: 13px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* Project pages */
@@ -343,6 +373,10 @@ h1 {
 
 .back-button {
     margin-bottom: 40px;
+}
+
+.back-button:hover {
+    opacity: 100%;
 }
 
 /* Connect*/
