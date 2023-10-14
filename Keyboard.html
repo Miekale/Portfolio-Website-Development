@@ -18,7 +18,25 @@
     <body style="background-color: #2A2C36;">
         <div class="project-pages">
             <h1>Keyboard from Scratch</h1>
-            <img src="media/key_matrix.png" alt="Key Matrix">
+
+            <div class="slideshow">
+                <div class="slide">
+                    <img src="media/keyboard_Main_schematic.png" alt="Schematic">
+                </div>
+                <div class="slide">
+                    <img src="media/key_matrix.png" alt="Key Matrix">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+            
             <div class="project-pages-main">
                 <ul>
                     <li>Developing Mechanical keyboard PCB in KiCAD using ATMega32u4 Microcontroller</li>
@@ -28,12 +46,13 @@
                 <p>
                     The next steps of this project will be to route the traces on the PCB in KiCad, design the case
                     in mechanical CAD to be fabricated and set up the firmware on the microcontroller. To view
-                    the schematics click <a href="media/Keyboard_Schematic.pdf">here</a>.
+                    access the pdf click <a href="media/Keyboard_Schematic.pdf">here</a>.
                 </p>
             </div>
             <div class="back-button">
                 <a href="Home.html#projects">BACK TO PROJECTS</a>
             </div>
+            <script src="scripts.js"></script>
         </div>
     </body>
 </html>

@@ -18,22 +18,39 @@
     <body style="background-color: #2A2C36;">
         <div class="project-pages">
             <h1>OpenMV7 Slimelight</h1>
-            <img src="media/Slimelight_in_case.jpg" alt="slimelight">
+            <div class="slideshow">
+                <div class="slide">
+                    <img src="media/Slimelight_in_case.jpg" alt="slimelight">
+                </div>
+                <div class="slide">
+                    <img src="media/Slimelight_45angle.JPG">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            
             <div class="project-pages-main">
                 <ul>
-                    <li>Using EDA pcb designer to exchange FT232RL board with the SP3223EEA-L/TR transceiver</li>
-                    <li>Designing housing case and mount with custom strain relief for robot vision system</li>
+                    <li>Using EDA PCB designer to exchange FT232RL board with the SP3223EEA-L/TR transceiver</li>
+                    <li>Designing board's case and mount with custom strain relief to withstand impact while competing</li>
                     <li>Soldering the components onto the PCBs</li>
                 </ul>    
                 <p>
                     Instead of using the default Limelight product that FRC teams used, my team made a custom slimelight
                     for the robot's visions systems. I updated the schematic to replace the FT232RL board with a SP3223EEA-L 
-                    tranciever. This slimelight was used on the competition robot in 2022.
+                    tranciever. This slimelight was used on the competition robot in 2022 for our turret shoot which relied on it for the robot's vision.
                 </p>
             </div>
             <div class="back-button">
                 <a href="Home.html#projects">BACK TO PROJECTS</a>
             </div>
+            <script src="scripts.js"></script>
         </div>
     </body>
 </html>

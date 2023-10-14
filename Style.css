@@ -14,6 +14,7 @@ body {
 /* Home Page */
 #home {
     height: 100vh;
+    width: 100%;
 }
 
 h1 {
@@ -25,14 +26,20 @@ h1 {
 
 .asci {
     z-index: 3;
-    margin: auto;
-    position: absolute;
-    height: 94vh;
-    width: 94vh;
+    position: relative;
+    height: 100vh;
+    max-width: 94vh;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
-    float: center;
+}
+
+.asci img {
+    height: 94vh;
+    position:absolute;
+    object-fit: cover;
+    width: 100%;
+    bottom: 0px;
 }
 
 .titleblock:hover {
@@ -47,12 +54,12 @@ h1 {
     to {opacity: 10%;}
 }
 
-div.titleblock {
+.titleblock {
     background-color: #868F6E;
     top: 30vh;
     opacity: 90%;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     height: auto;
     width: 60%;
     color:#000000;
@@ -60,9 +67,10 @@ div.titleblock {
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
-    margin: auto;
     clear: none;
     z-index: 4;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .titleblock h1 {
@@ -188,8 +196,8 @@ div.titleblock {
 .project-pages {
     margin-left: 15%;
     margin-right: 15%;
+    height: auto;
 }
-
 
 .project-pages-main {
     position: relative;
@@ -199,7 +207,7 @@ div.titleblock {
     padding: 40px;
 }
 
-.project-pages img {
+/* .project-pages img {
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -207,9 +215,8 @@ div.titleblock {
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
-    border-width: 5;
     margin-bottom: 15px;
-}
+} */
 
 .project-pages h1 {
     color: #F4F4F0;
@@ -230,8 +237,6 @@ div.titleblock {
     line-height: 150%;
 }
 
-
-
 .project-pages-main a {
     color: #535a56;
 }
@@ -243,10 +248,87 @@ div.titleblock {
     line-height: 150%;
 }
 
+.slideshow {
+    position: relative;
+    width: 100%;
+}
+
+.slide img, video{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    max-width: 100%;
+    width: auto;
+    height: 70vh;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+@media (max-width:1100px) {
+    .slide img , video{
+        height: auto;
+    }
+}
+
+.prev, .next {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    font-size: 10vh;
+    color: #F4F4F0;
+    font-weight: bold;
+    font-size: 65px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: -65px;
+}
+
+.next {
+    right: -65px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+    background-color: #F4F4F0;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    top: 50%;
+    margin-bottom: 15px;
+}
+
+.prev:hover, .next:hover {
+    color: #868F6E;
+}
+.active, .dot:hover {
+    background-color: #868F6E;
+    border: solid;
+    border-color: #535A56;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 .back-button a {
     position: absolute;
     font-weight: 550;
-    margin: auto;
+    margin-bottom: 40px;
     text-decoration: none;
     font-size: 20px;
     background-color: #535A56;
@@ -260,7 +342,7 @@ div.titleblock {
 }
 
 .back-button {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 /* Connect*/
@@ -268,10 +350,12 @@ div.titleblock {
 #connect {
     background-color: #F4F4F0;
     height: 25vh;
+    position: relative;
 }
 
 #connect h1 {
     margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 50px;
 }
 

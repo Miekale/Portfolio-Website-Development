@@ -18,7 +18,29 @@
     <body style="background-color: #2A2C36;">
         <div class="project-pages">
             <h1>FIRST Robotics 4627 Team</h1>
-            <img src="media/2022_robot_full.jpeg">
+            
+            <div class="slideshow">
+                <div class="slide">
+                    <img src="media/2022_robot_top.JPG">
+                </div>
+                <div class="slide">
+                    <img src="media/2022_robot_full.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="media/2022_shooting.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            
             <div class="project-pages-main">
                 <ul>
                     <li>Developed Leadership and project management skills</li>
@@ -30,13 +52,14 @@
                 <p>
                     For all three years on my Robotics team, 4627 Manning Robotics, I was the electrical captain.
                     I designed the electrial systems of the robot while working with the other team leads to
-                    integrate all of the systems together. Additionally, during my final year I worked on 
-                    redesigning the team's custom slimelight, more of which on the <a href="OpenMV7.html">OpenMV7 Slimelight Project</a>.
+                    integrate all of the systems together. Additionally, during my final year I 
+                    redesigned the team's custom slimelight, more of which is on the <a href="OpenMV7.html">OpenMV7 Slimelight Project</a>.
                 </p>
             </div>
             <div class="back-button">
                 <a href="Home.html#projects">BACK TO PROJECTS</a>
             </div>
+            <script src="scripts.js"></script>
         </div>
     </body>
 </html>
