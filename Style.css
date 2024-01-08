@@ -214,9 +214,9 @@ h1 {
     text-decoration: none;
     width: auto;
     background-color: #535A56;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px;
-    padding-inline: 13px;
+    padding-inline: 25px;
     left: 50%;
     transform: translate(-50%);
 }
