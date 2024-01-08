@@ -48,11 +48,10 @@
         </ul>
         <p>
           The 2023 Toyota design challenge required competitors to detect
-          whether a hole was covered by a sticker, partially covered, or there
-          was no sticker on the hole. To make the problem challenging holes and
-          stickers similar sizes, mandated that the camera must detect the
-          stickers from different angles and that one’s model must be able to
-          detect the stickers on different colored surfaces.
+          whether a hole was covered by a sticker, partially covered, or whether there
+          was no sticker on the hole. To make the problem challenging, holes and
+          stickers were similar sizes and detection methods had to detect the three
+          classes with dynamic camera positioning and varied background color.
           </p>
           <p>
             Addressing the challenge, we created a labeled dataset of 400+ images,
@@ -60,7 +59,7 @@
             techniques were applied by using model predictions for training. The model
             achieved <b>82%</b> accuracy on stickers, <b>89%</b> on holes, and <b>92%</b> on partially
             covered holes. It demonstrated recognition across dynamic camera
-            positions and on red, white, and metallic surfaces.
+            positions on red, white, and metallic surfaces.
           </p>
         <div class="icon" style="text-align: center">
           <a href="https://github.com/hepromark/ToyotaChallenge2023"
